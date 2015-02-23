@@ -13,20 +13,19 @@
 </thead><tbody>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//div[2]/div[1]/form[2]/div/table/tbody/tr[3]/td[8]/input</td>
+	<td>//div[2]/div[1]/form[2]/div/table/tbody/tr[*]/td[contains(text(),'myNewSched')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[2]/div[1]/form[2]/div/table/tbody/tr[3]/td[8]/input</td>
+	<td>//div[2]/div[1]/form[2]/div/table/tbody/tr[*]/td[contains(text(),'myNewSched')]/following::tr[*]/td[8]/input[@name='327']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementNotPresent</td>
-	<td>//div[2]/div[1]/form[2]/div/table/tbody/tr[3]/td[8]/input</td>
+	<td>//div[2]/div[1]/form[2]/div/table/tbody/tr[*]/td[contains(text(),'myNewSched')]</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
