@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
+<title>XpathAlexKlogin</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">XpathAlexKlogin</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Login to MyAvailableTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=polelogin</td>
+	<td>telrantests@yahoo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>12345.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//*[@id='placetable']/table[1]/tbody/tr[3]/td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=endDate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='ui-datepicker-div']/table/tbody/tr[3]/td[5][@data-year=&quot;2015&quot;][@data-month=&quot;2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//*[@id='ui-datepicker-div']/table/tbody/tr[3]/td[5][@data-year=&quot;2015&quot;][@data-month=&quot;3&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//*[@id='ui-datepicker-div']/table/tbody/tr[3]/td[5][@data-year=&quot;2015&quot;][@data-month=&quot;1&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
