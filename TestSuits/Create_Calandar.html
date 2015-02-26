@@ -17,7 +17,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>waitForElementPresent</td>
+	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
 	<td></td>
 </tr>
@@ -25,6 +30,11 @@
 	<td>type</td>
 	<td>id=mattName</td>
 	<td>Calendar</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=startDate</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -53,16 +63,6 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=mRepeat</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=mRepeat</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>id=td0s0</td>
 	<td></td>
 </tr>
@@ -77,16 +77,25 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>waitForElementPresent</td>
 	<td>id=saveMatt</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>//*[@id='placetable']/table[6]/tbody/tr[1]/td</td>
-	<td>exact:http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/myavailabletime/viewMatt?table=329&amp;username=romankotlr@gmail.com</td>
+	<td>click</td>
+	<td>id=saveMatt</td>
+	<td></td>
 </tr>
-
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='placetable']/table[9]/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='placetable']/table[9]/tbody/tr/td</td>
+	<td>Calendar</td>
+</tr>
 </tbody></table>
 </body>
 </html>
