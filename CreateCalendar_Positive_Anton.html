@@ -12,9 +12,19 @@
 <tr><td rowspan="1" colspan="3">CreateCalendar_Positive_Anton</td></tr>
 </thead><tbody>
 <tr>
-	<td>clickAndWait</td>
+	<td>waitForElementPresent</td>
 	<td>//form[@id='form2']/div/button</td>
 	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='form2']/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=mattName</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -22,9 +32,19 @@
 	<td>1</td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>id=timeSlot</td>
+	<td>label=30 min</td>
+</tr>
+<tr>
 	<td>select</td>
 	<td>id=timeSlot</td>
 	<td>label=30 min</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=startDate</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -52,6 +72,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>id=saveMatt</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>id=saveMatt</td>
 	<td></td>
@@ -59,6 +84,11 @@
 <tr>
 	<td>verifyText</td>
 	<td>css=div &gt; button</td>
+	<td>Create a new Available calendar</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='placetable']//tr[2]/td/a</td>
 	<td>Create a new Available calendar</td>
 </tr>
 </tbody></table>
