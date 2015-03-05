@@ -4,58 +4,69 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
-<title>TC_1383_ChangeCalendar</title>
+<title>synchronization</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">TC_1383_ChangeCalendar</td></tr>
+<tr><td rowspan="1" colspan="3">synchronization</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/myavailabletime/saveMatt?table=A</td>
+	<td>/myavailabletime/home?name=MyAvailableTime2015%40gmail.com&amp;password=12345&amp;mergedimage_2=</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[2]/input</td>
+	<td>//button[@type='submit']</td>
 	<td></td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>id=timeSlot</td>
-	<td>label=30 min</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=saveMatt</td>
+	<td>click</td>
+	<td>//div[@id='___signin_0']/button</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[1]/input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>id=td47s0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementNotPresent</td>
-	<td>id=td95s0</td>
-	<td></td>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//*[@id='saveMatt']</td>
+	<td>id=submit_approve_access</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>oauth2relay681091149</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUpAndWait</td>
+	<td>pmh1031725202</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[8]/input</td>
+	<td>id=savebutton</td>
 	<td></td>
 </tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='second']/div/p[8]</td>
+	<td>myavailabletime2015@gmail.com</td>
+</tr>
+
 </tbody></table>
 </body>
 </html>

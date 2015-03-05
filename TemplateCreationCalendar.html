@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
-<title>Create_Calandar</title>
+<title>TemplateCreationCalendar</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Create_Calandar</td></tr>
+<tr><td rowspan="1" colspan="3">TemplateCreationCalendar</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -28,21 +28,12 @@
 </tr>
 <tr>
 	<td>store</td>
-<<<<<<< HEAD
-	<td></td>
-	<td>CaendarName</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>NewCalendarName$(CalendarName)</td>
-=======
 	<td>javascript{Math.floor(Math.random() * 1000)}</td>
 	<td>CalendarName</td>
 </tr>
 <tr>
 	<td>echo</td>
 	<td>New calendar Name ${CalendarName}</td>
->>>>>>> origin/master
 	<td></td>
 </tr>
 <tr>
@@ -53,11 +44,7 @@
 <tr>
 	<td>type</td>
 	<td>id=mattName</td>
-<<<<<<< HEAD
-	<td>$(CalendarName)</td>
-=======
 	<td>${CalendarName}</td>
->>>>>>> origin/master
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -81,11 +68,7 @@
 </tr>
 <tr>
 	<td>click</td>
-<<<<<<< HEAD
-	<td>//*[@id='ui-datepicker-div']//tr[5]/td[2]/a</td>
-=======
 	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[2]/a</td>
->>>>>>> origin/master
 	<td></td>
 </tr>
 <tr>
@@ -124,16 +107,11 @@
 	<td></td>
 </tr>
 <tr>
-<<<<<<< HEAD
-	<td>verifyTextPresent</td>
-	<td>//*[contains(text(),&quot;Calendar&quot;)]</td>
-	<td>$(CalendarName)</td>
-=======
 	<td>verifyElementPresent</td>
 	<td>//*[contains(text(),&quot;${CalendarName}&quot;)]</td>
 	<td></td>
->>>>>>> origin/master
 </tr>
+
 </tbody></table>
 </body>
 </html>
