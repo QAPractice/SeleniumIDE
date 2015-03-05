@@ -3,42 +3,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
-<title>TC_1339_CreateCalendar</title>
+<link rel="selenium.base" href="http://myavailabletime.com/" />
+<title>LoginThroughYahooAcc</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">TC_1339_CreateCalendar</td></tr>
+<tr><td rowspan="1" colspan="3">LoginThroughYahooAcc</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/myavailabletime/home?name=telrantests%40yahoo.com&amp;password=12345.com</td>
+	<td>/</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
+	<td>link=Login to MyAvailableTime</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=mattName</td>
-	<td>A</td>
+	<td>id=polelogin</td>
+	<td>telrantests@yahoo.com</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>id=timeSlot</td>
-	<td>label=1 hour</td>
+	<td>type</td>
+	<td>id=password</td>
+	<td>12345.com</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>id=saveMatt</td>
+	<td>id=1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]</td>
+	<td>id=second</td>
 	<td></td>
 </tr>
 </tbody></table>
