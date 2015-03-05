@@ -33,7 +33,7 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>New calendar Name ${CalendarName}</td>
+	<td>generating new calendar name - ${CalendarName}</td>
 	<td></td>
 </tr>
 <tr>
@@ -45,6 +45,11 @@
 	<td>type</td>
 	<td>id=mattName</td>
 	<td>${CalendarName}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Ading calendar name into field ${CalendarName}</td>
+	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -111,7 +116,6 @@
 	<td>//*[contains(text(),&quot;${CalendarName}&quot;)]</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
