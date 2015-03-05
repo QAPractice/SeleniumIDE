@@ -28,41 +28,18 @@
 </tr>
 <tr>
 	<td>store</td>
-<<<<<<< HEAD
-	<td></td>
-	<td>CaendarName</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>NewCalendarName$(CalendarName)</td>
-=======
-	<td>javascript{Math.floor(Math.random() * 1000)}</td>
+	<td>$(CalendarName)&lt;/td&gt;<br />=======<br />	&lt;td&gt;javascript{Math.floor(Math.random() * 1000)}</td>
 	<td>CalendarName</td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>New calendar Name ${CalendarName}</td>
->>>>>>> origin/master
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=mattName</td>
+	<td>New calendar Name ${CalendarName}&lt;/td&gt;<br />&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master<br />	&lt;td&gt;&lt;/td&gt;<br />&lt;/tr&gt;<br />&lt;tr&gt;<br />	&lt;td&gt;waitForElementPresent</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=mattName</td>
-<<<<<<< HEAD
-	<td>$(CalendarName)</td>
-=======
-	<td>${CalendarName}</td>
->>>>>>> origin/master
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=startDate</td>
-	<td></td>
+	<td>id=mattName&lt;/td&gt;<br />&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br />	&lt;td&gt;$(CalendarName)&lt;/td&gt;<br />=======<br />	&lt;td&gt;${CalendarName}&lt;/td&gt;<br />&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master<br />&lt;/tr&gt;<br />&lt;tr&gt;<br />	&lt;td&gt;waitForElementPresent</td>
+	<td>id=startDate&lt;/td&gt;<br />	&lt;td&gt;</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -77,15 +54,6 @@
 <tr>
 	<td>click</td>
 	<td>id=endDate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-<<<<<<< HEAD
-	<td>//*[@id='ui-datepicker-div']//tr[5]/td[2]/a</td>
-=======
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[2]/a</td>
->>>>>>> origin/master
 	<td></td>
 </tr>
 <tr>
@@ -120,6 +88,11 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
+	<td>//*[contains(text(),&quot;${CalendarName}&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyForElementPresent</td>
 	<td>//*[contains(text(),&quot;${CalendarName}&quot;)]</td>
 	<td></td>
 </tr>
