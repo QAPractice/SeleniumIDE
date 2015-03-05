@@ -27,9 +27,37 @@
 	<td></td>
 </tr>
 <tr>
+	<td>store</td>
+<<<<<<< HEAD
+	<td></td>
+	<td>CaendarName</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>NewCalendarName$(CalendarName)</td>
+=======
+	<td>javascript{Math.floor(Math.random() * 1000)}</td>
+	<td>CalendarName</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>New calendar Name ${CalendarName}</td>
+>>>>>>> origin/master
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=mattName</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=mattName</td>
-	<td>Calendar</td>
+<<<<<<< HEAD
+	<td>$(CalendarName)</td>
+=======
+	<td>${CalendarName}</td>
+>>>>>>> origin/master
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -53,7 +81,11 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[3]/td[4]/a</td>
+<<<<<<< HEAD
+	<td>//*[@id='ui-datepicker-div']//tr[5]/td[2]/a</td>
+=======
+	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[2]/a</td>
+>>>>>>> origin/master
 	<td></td>
 </tr>
 <tr>
@@ -88,13 +120,19 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//div[@id='placetable']/table[9]/tbody/tr/td</td>
+	<td>//*[contains(text(),&quot;${CalendarName}&quot;)]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>//div[@id='placetable']/table[9]/tbody/tr/td</td>
-	<td>Calendar</td>
+<<<<<<< HEAD
+	<td>verifyTextPresent</td>
+	<td>//*[contains(text(),&quot;Calendar&quot;)]</td>
+	<td>$(CalendarName)</td>
+=======
+	<td>verifyElementPresent</td>
+	<td>//*[contains(text(),&quot;${CalendarName}&quot;)]</td>
+	<td></td>
+>>>>>>> origin/master
 </tr>
 </tbody></table>
 </body>
