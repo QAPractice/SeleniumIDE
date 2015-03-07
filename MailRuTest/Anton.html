@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://e.mail.ru/" />
+<title>Anton</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Anton</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/signup?from=main_noc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>name${name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{['brie','cheddar','swiss'][Math.floor(Math.random()*3)]}</td>
+	<td>lastname</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>lastname${lastname}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]</td>
+	<td>${lastname}</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]/option[2]</td>
+	<td>label=1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=BirthMonth</td>
+	<td>label=Январь</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=x_d7d33b993aa750e2</td>
+	<td>label=1996</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=your_town</td>
+	<td>Израиль</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=x_cc38e163eff6d8e6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=x_cc38e163eff6d8e6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&lt;tr&gt; 	&lt;td&gt;type&lt;/td&gt; 	&lt;td&gt;id=x_cc38e163eff6d8e6&lt;/td&gt; 	&lt;td&gt;&lt;/td&gt; &lt;/tr&gt;</td>
+	<td>mail</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${mail}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=x_cc38e163eff6d8e6</td>
+	<td>${mail}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=man1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.floor(Math.random()*11)}</td>
+	<td>paswword</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${paswword}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=x_84d5b82c98f9708f</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=x_84d5b82c98f9708f</td>
+	<td>${paswword}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=x_fb29836cd02377f4</td>
+	<td>${paswword}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@value='Зарегистрироваться']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='MailRuConfirm']/div/a/i</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
