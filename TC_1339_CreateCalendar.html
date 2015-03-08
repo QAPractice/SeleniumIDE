@@ -17,8 +17,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>waitForElementPresent</td>
 	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=mattName</td>
 	<td></td>
 </tr>
 <tr>
@@ -27,18 +37,33 @@
 	<td>A</td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>id=timeSlot</td>
+	<td></td>
+</tr>
+<tr>
 	<td>select</td>
 	<td>id=timeSlot</td>
 	<td>label=1 hour</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>id=saveMatt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=first</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
 	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Calendar 'A' with 1 hour slot was created</td>
 	<td></td>
 </tr>
 </tbody></table>
