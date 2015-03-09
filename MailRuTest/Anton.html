@@ -17,6 +17,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']</td>
+	<td></td>
+</tr>
+<tr>
 	<td>store</td>
 	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
 	<td>name</td>
@@ -27,18 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>store</td>
-	<td>javascript{['brie','cheddar','swiss'][Math.floor(Math.random()*3)]}</td>
-	<td>lastname</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>lastname${lastname}</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
-	<td>//*[@id='registrationForm']</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,19 +47,29 @@
 	<td>${name}</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>//*[@id='registrationForm']/div[3]/span[1]</td>
-	<td>${lastname}</td>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]/option[2]</td>
+	<td>label=1</td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]</td>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]/option[2]</td>
+	<td>label=1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{['brie','cheddar','swiss'][Math.floor(Math.random()*3)]}</td>
+	<td>lastname</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>lastname${lastname}</td>
 	<td></td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]/option[2]</td>
-	<td>label=1</td>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]</td>
+	<td>${lastname}</td>
 </tr>
 <tr>
 	<td>select</td>
