@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://mail.ru/" />
+<title>mailru</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">mailru</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=PH_regLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=PH_regLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td>${Name}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generating user's name - ${Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Surname</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generating User's surname - ${Surname}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]/input</td>
+	<td>${Surname}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=BirthMonth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[2]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[3]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[3]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='your_town']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[5]//*[contains(text(),&quot;Израиль&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='registrationForm']/div[5]//*[contains(text(),&quot;Израиль&quot;)]</td>
+	<td>Израиль</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[5]/span[1]/div/span/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='man1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='loginField']/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generating User's email - ${Email}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='loginField']/span[1]/input</td>
+	<td>${Email}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[8]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Password</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generating password - ${Password}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[8]/span[1]/input</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[9]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[9]/span[1]/input</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='noPhoneLink']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[15]/span[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[15]/span[2]/button</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
