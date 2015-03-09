@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1#inbox" />
+<title>GMailMarina</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">GMailMarina</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ServiceLogin?service=mail&amp;passive=true&amp;rm=false&amp;continue=https://mail.google.com/mail/&amp;ss=1&amp;scc=1&amp;ltmpl=default&amp;ltmplcache=2&amp;emr=1#inbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=account-chooser-add-account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=link-signup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('').reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>FirstName</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>new First Name ${FirstName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=firstname-placeholder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=FirstName</td>
+	<td> ${FirstName}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('').reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>LastName</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>new Last Name ${LastName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=lastname-placeholder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LastName</td>
+	<td> ${LastName}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('').reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>GmailAddress</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>new GmailAddress ${GmailAddress}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GmailAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=GmailAddress</td>
+	<td>${GmailAddress}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('').reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Password</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Password ${Password}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Passwd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=PasswdAgain</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BirthMonth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=BirthMonth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=birthday-placeholder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random() * (28- 1) + 1}</td>
+	<td>BD</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Birth Day ${BD}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=BirthDay</td>
+	<td>${BD}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random() * (2014-1914 ) + 1914}</td>
+	<td>BY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=BirthYear</td>
+	<td>${BY}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RecoveryPhoneNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RecoveryPhoneNumber</td>
+	<td>+972544657894</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RecoveryEmailAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RecoveryEmailAddress</td>
+	<td>ninamalinina@rumbler.ru</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=SkipCaptcha</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=TermsOfService</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitbutton</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
