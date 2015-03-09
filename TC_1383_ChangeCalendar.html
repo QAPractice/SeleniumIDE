@@ -17,7 +17,17 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Presses on 'Edit' button under Calendar 'A' link.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[2]/input</td>
 	<td></td>
 </tr>
@@ -27,13 +37,33 @@
 	<td>label=30 min</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>id=saveMatt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Presses on 'View' button under Calendar 'A' link.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[1]/input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=mattTable</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Verifies that we have 48x48 table, but not 96x96</td>
 	<td></td>
 </tr>
 <tr>
@@ -47,13 +77,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//*[@id='saveMatt']</td>
+	<td>click</td>
+	<td>id=saveMatt</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>waitForElementPresent</td>
 	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[8]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]/../../tr[3]/td[8]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>We delete Calendar 'A' after we use it.</td>
 	<td></td>
 </tr>
 </tbody></table>

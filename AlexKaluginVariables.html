@@ -33,52 +33,7 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>New calendar Name ${CalendarName}</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=startDate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=startDate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[3]/td[2]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=endDate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[4]/td[2]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//*[@id='timeSlot']/option[2]</td>
-	<td>label=30 min</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=td0s0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=td1s3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=td2s3</td>
+	<td>New calendar Name ${CalendarName}. Was chosen randomly.</td>
 	<td></td>
 </tr>
 <tr>
@@ -90,6 +45,16 @@
 	<td>type</td>
 	<td>id=mattName</td>
 	<td>${CalendarName}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=timeSlot</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=timeSlot</td>
+	<td>label=30 min</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
