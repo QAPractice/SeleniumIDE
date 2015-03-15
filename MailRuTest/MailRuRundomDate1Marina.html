@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://mail.ru/" />
+<title>MailRuDateRundom</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MailRuDateRundom</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Регистрация в почте</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/span[1]/input</td>
+	<td>${Name}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//div[2]/span[1]/input</td>
+	<td>${Name}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>LastName</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[3]/span[1]/input</td>
+	<td>${LastName}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//div[3]/span[1]/input</td>
+	<td>${LastName}</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{Math.floor(Math.random()*(28 - 1)) + 1}</td>
+	<td>Number</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[4]/span[1]/select[1]</td>
+	<td>${Number}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//div[4]/span[1]/select[1]</td>
+	<td>${Number}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=BirthMonth</td>
+	<td>label=Январь</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{Math.floor(Math.random()*(2014 - 1914)) + 1914}</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[4]/span[1]/select[2]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[4]/span[1]/select[3]</td>
+	<td>${Year}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//div[4]/span[1]/select[3]</td>
+	<td>${Year}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=your_town</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=your_town</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=your_town</td>
+	<td>Израиль</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[6]/span[2]/label[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='man2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Mail</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='loginField']/span[1]/input</td>
+	<td>${Mail}</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//*[@id='loginField']/span[1]/div/div/div/span/div[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Password</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[8]/span[1]/input</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//div[8]/span[1]/input</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='signRePassword']/span[1]/input</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='signRePassword']/span[1]/input</td>
+	<td>${Password}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.floor(Math.random()*1110011001)}</td>
+	<td>numberPhone</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.phone</td>
+	<td>+972${numberPhone}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input.phone</td>
+	<td>+972${numberPhone}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@value='Зарегистрироваться']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[2]/span[2]/span[1]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
