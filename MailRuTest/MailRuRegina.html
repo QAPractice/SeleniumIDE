@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://e.mail.ru/" />
+<title>MailRu_Regina</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MailRu_Regina</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=PH_regLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=PH_regLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td>${Name}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generating user's name - ${Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td>${Name}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='registrationForm']/div[2]/span[1]/input</td>
+	<td>${Name}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[3]/span[2]/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='registrationForm']/div[3]/span[2]/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Surname</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]/input</td>
+	<td>${Surname}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generating user's surname - ${Surname}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]/input</td>
+	<td>${Surname}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='registrationForm']/div[3]/span[1]/input</td>
+	<td>${Surname}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]</td>
+	<td>label=16</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[1]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=BirthMonth</td>
+	<td>label=Июль</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[2]/option[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[@id='registrationForm']/div[4]/span[1]/select[3]</td>
+	<td>label=1981</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='registrationForm']/div[4]/span[2]/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='your_town']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='your_town']</td>
+	<td>Ашкелон</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='your_town']</td>
+	<td>Ашкелон</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='registrationForm']/div[5]/span[2]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='registrationForm']/div[6]/span[2]/label[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='man2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='registrationForm']/div[6]/span[3]/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='loginField']/span[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,11);}</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='loginField']/span[1]/input</td>
+	<td>${Email}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generating user's email - ${Email}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='loginField']/span[1]/input</td>
+	<td>${Email}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='loginField']/span[1]/input</td>
+	<td>${Email}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[@id='loginField']/span[1]/select</td>
+	<td>label=@inbox.ru</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='loginField']/span[2]/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='loginField']/span[1]/select</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='signRePassword']/span[2]/span[1]</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
