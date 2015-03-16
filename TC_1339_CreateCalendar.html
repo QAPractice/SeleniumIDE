@@ -32,9 +32,24 @@
 	<td></td>
 </tr>
 <tr>
+	<td>store</td>
+	<td>javascript{Math.abs(Math.random().toString().split('')&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.reduce(function(p,c){return (p&lt;&lt;5)-p+c})).toString(36).substr(0,1);}</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Generated name - ${Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mattName</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=mattName</td>
-	<td>A</td>
+	<td>${Name}</td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
@@ -58,12 +73,122 @@
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//*[@id='placetable']//tr[1]/td[contains(text(), 'A')]</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>Calendar 'A' with 1 hour slot was created</td>
+	<td>Calendar '${Name}' with 1 hour slot was created</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]/../../tr[3]/td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Presses on 'Edit' button under Calendar '${Name}' link.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]/../../tr[3]/td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>id=td24s0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Verifiiyint that previous slot is for 1 hour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=timeSlot</td>
+	<td>label=30 min</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Changing time slot is to 30 min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=td24s0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>id=td48s0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveMatt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Presses on 'View' button under Calendar '${Name}' link.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]/../../tr[3]/td[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]/../../tr[3]/td[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=mattTable</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Verifies that selected time slot is still 30 minutes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=td47s0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>id=td95s0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveMatt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Deleting Calendar ${Name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]/../../tr[3]/td[8]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]/../../tr[3]/td[8]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(), '${Name}')]</td>
 	<td></td>
 </tr>
 </tbody></table>
