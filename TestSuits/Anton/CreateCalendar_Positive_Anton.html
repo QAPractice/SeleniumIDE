@@ -32,6 +32,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>id=mattName</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>id=mattName</td>
 	<td></td>
@@ -93,12 +98,17 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//*[@id='placetable']//tr[2]/td/a</td>
+	<td>//*[@id='placetable']/table</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//*[@id='placetable']//tr[2]/td/a</td>
+	<td>//*[@id='placetable']//tr[1]/td[contains(text(),'${CalendarName}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Calendar ${CalendarName} was created</td>
 	<td></td>
 </tr>
 <tr>
