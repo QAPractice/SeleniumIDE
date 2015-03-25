@@ -17,8 +17,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>xpath=(//input[@name='443'])[2]</td>
+	<td>waitForElementPresent</td>
+	<td>//*[contains(text(),&quot;one two three four five six seven eight nine ten&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='placetable']/table[2]//tr[3]/td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='second']//p[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=startDate</td>
 	<td></td>
 </tr>
 <tr>
@@ -27,8 +42,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>id=ui-datepicker-div</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr/td[7]/a</td>
+	<td>//*[@id='ui-datepicker-div']//tr[2]/td[4]/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -37,21 +57,60 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[3]/a</td>
+	<td>waitForElementPresent</td>
+	<td>id=ui-datepicker-div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
+	<td>//*[@id='ui-datepicker-div']//a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='ui-datepicker-div']//tr[2]/td[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='ui-datepicker-div']//tr[2]/td[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
 	<td>id=saveMatt</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>name=537</td>
+	<td>click</td>
+	<td>id=saveMatt</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[contains(text(),&quot;one two three four five six seven eight nine ten&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='placetable']/table[2]//td[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='placetable']/table[2]//td[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=next</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>
