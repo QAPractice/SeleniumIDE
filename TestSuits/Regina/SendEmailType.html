@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
+<title>Check_Inv_Reg</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Check_Inv_Reg</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/myavailabletime/home?name=rilopatin%40gmail.com&amp;password=12345&amp;mergedimage_2=</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='placetable']/table/tbody/tr[3]/td[7]/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='placetable']/table/tbody/tr[5]/td[6]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='availableEmails']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Type email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='typedAddress']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=typedAddress</td>
+	<td>ri-lopatina@yandex.ru</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='sendEmails']</td>
+	<td>ri-lopatina@yandex.ru</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Send email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Send']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='form2']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='log']/span/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
