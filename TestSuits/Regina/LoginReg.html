@@ -3,43 +3,58 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://www.myavailabletime.com/" />
-<title>Login correct fields Roman</title>
+<link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
+<title>LoginReg</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Login correct fields Roman</td></tr>
+<tr><td rowspan="1" colspan="3">LoginReg</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/</td>
+	<td>http://myavailabletime.com/</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
+	<td>verifyElementPresent</td>
 	<td>link=Login to MyAvailableTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Login to MyAvailableTime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=polelogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Type login</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=polelogin</td>
-	<td>oshil3321@gmail.com</td>
+	<td>rilopatin@gmail.com</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Type password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=password</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password</td>
-	<td>3321ol</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=1</td>
-	<td></td>
+	<td>12345</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -47,19 +62,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForElementPresent</td>
-	<td>//div[@id='second']/div/p</td>
+	<td>id=second</td>
 	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//div[@id='second']/div/p</td>
-	<td>Account Settings</td>
 </tr>
 </tbody></table>
 </body>

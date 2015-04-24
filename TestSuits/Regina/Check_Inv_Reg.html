@@ -4,111 +4,141 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
-<title>EditStartEndDateOleg</title>
+<title>Check_Inv_Reg</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">EditStartEndDateOleg</td></tr>
+<tr><td rowspan="1" colspan="3">Check_Inv_Reg</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/myavailabletime/saveMatt?mattName=one+two+three+four+five+six+seven+eight+nine+ten&amp;startDate=23.02.2015&amp;endDate=22.03.2015&amp;timeSlot=60&amp;table=one+two+three+four+five+six+seven+eight+nine+ten</td>
+	<td>http://myavailabletime.com/</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//*[contains(text(),&quot;one two three four five six seven eight nine ten&quot;)]</td>
+	<td>link=Login to MyAvailableTime</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//*[@id='placetable']/table[2]//tr[3]/td[2]/input</td>
+	<td>link=Login to MyAvailableTime</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//*[@id='second']//p[1]</td>
+	<td>id=polelogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Type login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=polelogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=polelogin</td>
+	<td>ri-lopatina@yandex.ru</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Type password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=1</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>id=startDate</td>
+	<td>id=second</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>check invitation</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=startDate</td>
+	<td>//*[@id='log']/span[5]/button</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>id=ui-datepicker-div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//*[@id='ui-datepicker-div']//tr[2]/td[4]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=endDate</td>
+	<td>//*[@id='first']/div[1]/p</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>id=ui-datepicker-div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//*[@id='ui-datepicker-div']//a[2]/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//*[@id='ui-datepicker-div']//tr[2]/td[4]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//*[@id='ui-datepicker-div']//tr[2]/td[4]/a</td>
+	<td>//*[contains(text(),&quot;Initiator name&quot;)]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>id=saveMatt</td>
+	<td>//*[contains(text(),&quot;Initiator name&quot;)]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=saveMatt</td>
+	<td>//*[contains(text(),&quot;Initiator name&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Choose time</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//*[contains(text(),&quot;one two three four five six seven eight nine ten&quot;)]</td>
+	<td>//*[@id='first']/div[1]/p</td>
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//*[@id='placetable']/table[2]//td[1]/input</td>
+	<td>verifyElementPresent</td>
+	<td>//*[@id='td47s4']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//*[@id='td48s4']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//*[@id='placetable']/table[2]//td[1]/input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=next</td>
+	<td>//*[@id='td2s4']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=next</td>
+	<td>//*[@id='saveMatt']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='first']/div/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//*[contains(text(),&quot;Initiator name&quot;)]</td>
 	<td></td>
 </tr>
 </tbody></table>

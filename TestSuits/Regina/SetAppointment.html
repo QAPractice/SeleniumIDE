@@ -4,76 +4,51 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
-<title>CreateCaledar10enOleg</title>
+<title>SetAppointment</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">CreateCaledar10enOleg</td></tr>
+<tr><td rowspan="1" colspan="3">SetAppointment</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/myavailabletime/home?name=oshil3321%40gmail.com&amp;password=3321ol</td>
+	<td>http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/myavailabletime/home?name=rilopatin%40gmail.com&amp;password=12345&amp;mergedimage_2=</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
+	<td>//*[@id='placetable']/table[1]/tbody/tr[3]/td[7]/a/img</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//button[@onclick=&quot;form2.action='dom'&quot;]</td>
+	<td>//*[@id='placetable']/table[1]/tbody/tr[3]/td[7]/a/img</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>id=mattName</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=mattName</td>
-	<td>one two three four five six seven eight nine ten</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>id=startDate</td>
+	<td>//*[@id='placetable']/table/tbody/tr[5]/td[7]/input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=startDate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[4]/td[2]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=endDate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='ui-datepicker-div']/table/tbody/tr[4]/td/a</td>
+	<td>//*[@id='placetable']/table/tbody/tr[5]/td[7]/input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>id=saveMatt</td>
+	<td>//*[@id='first']/div[1]/p</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=saveMatt</td>
+	<td>//*[@id='setAppoSave']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//*[contains(text(),&quot;one two three four five six seven eight nine ten&quot;)]</td>
+	<td>//*[@id='first']/div/p</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -3,39 +3,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://myavailabletime.com/" />
-<title>CreateCaledarDigitsNameRoman</title>
+<link rel="selenium.base" href="http://ec2-54-166-51-117.compute-1.amazonaws.com:8080/" />
+<title>Click_Inv</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">CreateCaledarDigitsNameRoman</td></tr>
+<tr><td rowspan="1" colspan="3">Click_Inv</td></tr>
 </thead><tbody>
 <tr>
-	<td>clickAndWait</td>
-	<td>//form[@id='form2']/div/button</td>
+	<td>open</td>
+	<td>/myavailabletime/home?name=romankotlr%40gmail.com&amp;password=babylon1974&amp;mergedimage_2=</td>
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=mattName</td>
-	<td>12345</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=saveMatt</td>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>css=div &gt; button</td>
-	<td>Create a new Available calendar</td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
+	<td>waitForElementPresent</td>
+	<td>//*[@id='first']/div/p</td>
 	<td></td>
 </tr>
+<tr>
+	<td>assertText</td>
+	<td>//*[@id='first']/div/p</td>
+	<td>*Invitations</td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
