@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://genefo.com:8080" />
+<title>registerTtt</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">registerTtt</td></tr>
+</thead><tbody>
+<!--create variable for users count-->
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>u</td>
+</tr>
+<!--create variable to store starting time -->
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getTime()</td>
+	<td>startTime</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>beginloop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>xpath=//*[@class='dropdown-toggle']</td>
+	<td>loggedin</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${loggedin} == false</td>
+	<td>startreg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[4]/a</td>
+	<td></td>
+</tr>
+<!--starting loop-->
+<tr>
+	<td>label</td>
+	<td>startreg</td>
+	<td></td>
+</tr>
+<!--starting registration-->
+<tr>
+	<td>open</td>
+	<td>/signup_regular</td>
+	<td></td>
+</tr>
+<!--creating random number for unique email-->
+<tr>
+	<td>storeEval</td>
+	<td>Math.floor((Math.random() * 100000) + 1);</td>
+	<td>n</td>
+</tr>
+<!--saving unique email (for this iteration only)-->
+<tr>
+	<td>store</td>
+	<td>genefotest+i${n}@gmail.com</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//*[@name=&quot;email&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//input[@name=&quot;email&quot;][@type=&quot;email&quot;]</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>111111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=firstName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>User</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=lastName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>UserLastName</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=birthmonth</td>
+	<td>February</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=birthday</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=birthyear</td>
+	<td>1980</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//*[@name=&quot;TOS&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/a</td>
+	<td></td>
+</tr>
+<!--first registration is done, processing to login and profile creation -->
+<tr>
+	<td>open</td>
+	<td>http://genefo.com:8080/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>111111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<!--adding pause 3 sec-->
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>xpath=//*[contains(text(),'wrong')]</td>
+	<td>wrongpass</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${wrongpass} == true</td>
+	<td>beginloop</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=relationID</td>
+	<td>label=It's me</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//option[@value='0'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>xpath=(//select[@name='genderID'])[2]</td>
+	<td>label=Male</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=condition</td>
+	<td>Lynch</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[contains(@id,'typeahead')]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@id='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=listcondition.unknownGenes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[14]</td>
+	<td></td>
+</tr>
+<!--Assertion (strict verification) that user is created-->
+<tr>
+	<td>assertText</td>
+	<td>//ng-include[2]/div/div[1]/div[1]/a</td>
+	<td>Your Profile is Complete - Continue to Homepage</td>
+</tr>
+<!--Incrementing counter by 1 after creaton of new user-->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['u'] = ${u}+1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>So far created ${u} users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[4]/a</td>
+	<td></td>
+</tr>
+<!--Setting loop boundaries - after 50 users created loop will be ended-->
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['u']&lt;151</td>
+	<td>beginloop</td>
+</tr>
+<!--Storind end test time-->
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getTime()</td>
+	<td>endTime</td>
+</tr>
+<!--Calculating overal test time in seconds-->
+<tr>
+	<td>storeEval</td>
+	<td>(${endTime} - ${startTime}) / 1000</td>
+	<td>testTime</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${u} users created in ${testTime} seconds</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
