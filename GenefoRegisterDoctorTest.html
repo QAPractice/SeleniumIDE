@@ -108,19 +108,9 @@
 	<td>DoctorLastName</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>name=birthmonth</td>
-	<td>February</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=birthday</td>
-	<td>11</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=birthyear</td>
-	<td>1980</td>
+	<td>click</td>
+	<td>xpath=//*[@name=&quot;isOver18&quot;]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -134,43 +124,17 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//div[2]/a</td>
-	<td></td>
-</tr>
-<!--first registration is done, processing to login and profile creation -->
-<tr>
-	<td>open</td>
-	<td>http://genefo.com:8080/login</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>name=email</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=email</td>
-	<td>${email}</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
-	<td>111111</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
 	<td>//ng-include/div/div/div[2]/ul[1]/li/a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//ng-include/div/div/div[2]/ul[1]/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//*[@class=&quot;profile_selector_name ng-binding&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -180,7 +144,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[1]/div/div/div/div[1]/div/div[1]/div/div[2]</td>
+	<td>xpath=//*[@class=&quot;profile_selector_name ng-binding&quot;]</td>
 	<td>Doctor DoctorLastName</td>
 </tr>
 <!--adding pause 3 sec-->
